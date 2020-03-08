@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:responsive_app/wigets/CenteredView/centered_view.dart';
 import 'package:responsive_app/wigets/callToActions/call_to_action.dart';
 import 'package:responsive_app/wigets/courseDetails/course_details.dart';
-
 import 'package:responsive_app/wigets/navigationBar/navigation_bar.dart';
 
 void main() => runApp(MyApp());

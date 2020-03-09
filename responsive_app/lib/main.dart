@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 import 'package:responsive_app/wigets/CenteredView/centered_view.dart';
-import 'package:responsive_app/wigets/callToActions/call_to_action.dart';
-import 'package:responsive_app/wigets/courseDetails/course_details.dart';
 import 'package:responsive_app/wigets/navigationBar/navigation_bar.dart';
+import 'package:responsive_app/wigets/homeContent/home_content_desktop.dart';
+import 'package:responsive_app/wigets/homeContent/home_content_mobile.dart';
 
 void main() => runApp(MyApp());
 
@@ -33,13 +34,9 @@ class HomePage extends StatelessWidget {
           children: <Widget>[
             NavigationBar(),
             Expanded(
-              child: Row(
-                children: <Widget>[
-                  CourseDetails(),
-                  CallToAction(
-                    title: 'Join course',
-                  ),
-                ],
+              child: ScreenTypeLayout(
+                desktop: HomeContentDesktop(),
+                mobile: HomeContentMobile(),
               ),
             )
           ],

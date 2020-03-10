@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:responsive_app/constants/app_constants.dart';
+
 class CallToActionMobile extends StatelessWidget {
   final String title;
   const CallToActionMobile({@required this.title,  key}) : super(key: key);
@@ -18,7 +20,7 @@ class CallToActionMobile extends StatelessWidget {
         )
       ),
       decoration: BoxDecoration(
-        color: Color.fromRGBO(255, 31, 229, 146),
+        color: primaryColor,
         borderRadius: BorderRadius.circular(5)
       ),
     );
